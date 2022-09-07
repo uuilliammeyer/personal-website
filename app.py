@@ -10,3 +10,7 @@ def index():
 def resume():
     # the path to this might need to be modified when deployed
     return send_file('static/pdf/resume.pdf')
+
+@app.route('/poster')
+def poster():
+    return send_file('static/pdf/Meyer_2022_symposium_poster_Final.pdf')
