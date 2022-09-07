@@ -14,3 +14,6 @@ def resume():
 @app.route('/poster')
 def poster():
     return send_file('static/pdf/Meyer_2022_symposium_poster_Final.pdf')
+
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', port=5000)
