@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    h3.terminal {
+        font: 1.3rem Inconsolata, monospace;
+    }
+
+    h3.center {
+        text-align: center;
+        color: white;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    p {
+        color: white;
+    }
+
+    b {
+        color: #2a7bff;
+    }
+
+    subtitle {
+        text-emphasis-color: white;
+        font-weight: bold;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+</style>
+
+<body>
+    <main>
+        <h1>William Meyer</h1>
+        <h3 class="center" color="green">he/him/his<h3>
+                <h3 class="terminal">
+                    $ ~/ whoami
+                </h3>
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <p> <b> I'm Will.</b> I'm a fourth year computer science and cognitive sicence student at
+                                the Unviersity of Virginia.
+                                I'm interested in the internal workings of brains and large scale production software.
+                                Accademically, I'm interested in software engineering, theoretical computer science,
+                                and computational neurosceince. I'm currently persuing full time employment
+                                opportunties in software engineering.
+                            </p>
+                            <h3 class="terminal"> $ ~/ echo $EXTRACURRICULARS</h3>
+                            <p>
+                                I've completed projects related to cognitive psychology and neuroscience, TA for
+                                theory of computation, and volunteer at Code for Charlottesville to help out my local
+                                Meals on Wheels chapter. In my free time, I enjoy running,
+                                rock climbing, reading, listening to my vinyl collection, playing word games, and
+                                watching sports.
+                            </p>
+
+                        </div>
+                        <div class="col">
+                            <img src="static/png/headshot.png" hieght="400" width="300" class="img-fluid"
+                                alt="Responsive image">
+                        </div>
+                    </div>
+                    <h3 class="terminal">
+                        $ ~/ echo $CONTACTME
+                    </h3>
+                    <p>
+                        If you've made it this far, let's get in touch!
+                    </p>
+                    <p>
+                        Conect with me on <a href="https://www.linkedin.com/in/william-meyer-30a5b9209/">LinkedIn.</a>
+                    </p>
+                    <p>
+                        Find my email and my phone number on my resume in the resume tab.
+                    </p>
+    </main>
+</body>
+{% endblock %}
