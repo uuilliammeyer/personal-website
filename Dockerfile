@@ -5,7 +5,7 @@ FROM python:3.8-alpine
 EXPOSE 5000/tcp
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
